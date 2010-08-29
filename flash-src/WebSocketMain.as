@@ -23,6 +23,9 @@ public class WebSocketMain extends Sprite {
   private var callerUrl:String;
   private var debug:Boolean = false;
 
+  Security.allowDomain("*");
+  Security.allowInsecureDomain("*");
+
   public function WebSocketMain() {
     
     // This is to avoid "You are trying to call recursively into the Flash Player ..."
